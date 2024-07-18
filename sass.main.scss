@@ -1,0 +1,1098 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+$btnbgcolor: white;
+$btncolor: black;
+$color1: #ffffff;
+$color2: #4071cb;
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .nav_top {
+    @include flex();
+    padding: 0px 50px;
+    .select {
+      display: flex;
+      gap: 30px;
+      select {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        option {
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+    .phone {
+      @include flex();
+      gap: 20px;
+      color: $btnbgcolor;
+      img {
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.1) translateY(-5px);
+        }
+      }
+      button {
+        padding: 15px 30px;
+        background-color: $btncolor;
+        color: white;
+        font-size: 12px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+  .nav_bottom {
+    @include flex();
+    padding: 0px 50px;
+    border-top: 2px solid #ffffff79;
+    border-bottom: 2px solid #ffffff79;
+    .logo {
+      img {
+        width: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      gap: 30px;
+      padding-right: 200px;
+      letter-spacing: 1px;
+      li {
+        list-style: none;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: translateY(-5px);
+        }
+        a {
+          text-decoration: none;
+          color: $btnbgcolor;
+        }
+      }
+    }
+  }
+  .hero {
+    overflow: hidden;
+    position: relative;
+    .hero_info {
+      width: 500px;
+      color: $color1;
+      font-family: sans-serif;
+      padding-top: 200px;
+      padding-bottom: 290px;
+      h1 {
+        padding-left: 50px;
+        font-size: 40px;
+      }
+      h2 {
+        padding-left: 50px;
+        font-size: 30px;
+      }
+    }
+    .hero_btn {
+      position: absolute;
+      bottom: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+    }
+  }
+  .nav_phone {
+    display: none;
+  }
+}
+
+main {
+  background-color: #f1f0eb;
+  .section1 {
+    .container {
+      .cards {
+        @include flex();
+        width: 100%;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 50px 0px;
+        .car1 {
+          position: relative;
+          overflow: hidden;
+          img {
+            width: 590px;
+          }
+          .car_info {
+            position: absolute;
+            font-size: 25px;
+            color: $color1;
+            font-family: sans-serif;
+            top: 0px;
+            left: -230px;
+            transition: all 0.6s ease-out;
+          }
+          &:hover .car_info {
+            transform: translateY(30px) rotate(360deg);
+            left: 30px;
+          }
+          .car_btn {
+            position: absolute;
+            bottom: -70px;
+            right: 30px;
+            padding: 15px 30px;
+            background-color: #ffffff03;
+            color: white;
+            font-size: 12px;
+            border-radius: 8px;
+            border: none;
+            border: 1px solid #4f4f4f;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.5s ease;
+            &:active {
+              background-color: $btncolor;
+              transform: scale(0.9);
+            }
+          }
+          &:hover .car_btn {
+            bottom: 30px;
+          }
+        }
+        .car2 {
+          @include flex();
+          flex-direction: column;
+          gap: 20px;
+          img {
+            width: 590px;
+          }
+          .car3 {
+            position: relative;
+            overflow: hidden;
+            .car_info {
+              position: absolute;
+              font-size: 25px;
+              color: $color1;
+              font-family: sans-serif;
+              top: 0px;
+              left: -230px;
+              transition: all 0.4s ease-out;
+            }
+            &:hover .car_info {
+              transform: translateY(30px) rotate(360deg);
+              left: 30px;
+            }
+            .car_btn {
+              position: absolute;
+              bottom: -70px;
+              right: 30px;
+              padding: 15px 30px;
+              background-color: #ffffff03;
+              color: white;
+              font-size: 12px;
+              border-radius: 8px;
+              border: none;
+              border: 1px solid #4f4f4f;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.3s ease;
+              &:active {
+                background-color: $btncolor;
+                transform: scale(0.9);
+              }
+            }
+            &:hover .car_btn {
+              bottom: 30px;
+            }
+          }
+          .car4 {
+            position: relative;
+            overflow: hidden;
+            .car_info {
+              position: absolute;
+              font-size: 25px;
+              color: $color1;
+              font-family: sans-serif;
+              top: 0px;
+              left: -230px;
+              transition: all 0.4s ease-out;
+            }
+            &:hover .car_info {
+              transform: translateY(30px) rotate(360deg);
+              left: 30px;
+            }
+            .car_btn {
+              position: absolute;
+              bottom: -70px;
+              right: 30px;
+              padding: 15px 30px;
+              background-color: #ffffff03;
+              color: white;
+              font-size: 12px;
+              border-radius: 8px;
+              border: none;
+              border: 1px solid #4f4f4f;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.3s ease;
+              &:active {
+                background-color: $btncolor;
+                transform: scale(0.9);
+              }
+            }
+            &:hover .car_btn {
+              bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section2 {
+    .container {
+      .cars_info {
+        text-align: center;
+        h1 {
+          font-size: 27px;
+          font-family: sans-serif;
+        }
+      }
+      .cars_btns {
+        @include flex();
+        padding: 30px 0px;
+        button {
+          width: 100%;
+          padding: 20px 0px;
+          background-color: transparent;
+          font-size: 17px;
+          font-family: sans-serif;
+          font-weight: 400;
+          border-radius: 6px;
+          border: none;
+          border: 1px solid #a2a1a17a;
+          cursor: pointer;
+          outline: none;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: #4071cb;
+            color: white;
+          }
+        }
+      }
+      .cars {
+        @include flex();
+        width: 100%;
+        gap: 20px;
+        padding: 50px 0px;
+        flex-wrap: wrap;
+        img {
+          transition: all 0.4s ease;
+          &:hover {
+            transform: translateY(-10px) scale(1.4);
+          }
+        }
+        .avto {
+          text-align: center;
+          a {
+            text-decoration: none;
+            h4 {
+              color: #4071cb;
+              font-size: 14px;
+              font-weight: 400;
+              padding-top: 7px;
+              cursor: pointer;
+            }
+          }
+          img {
+            width: 150px;
+            cursor: pointer;
+          }
+        }
+      }
+      .avto_btn {
+        @include flex();
+        justify-content: center;
+        padding-bottom: 60px;
+        button {
+          padding: 10px 70px;
+          background-color: transparent;
+          font-size: 15px;
+          font-family: sans-serif;
+          font-weight: 300;
+          color: $color2;
+          border-radius: 6px;
+          border: none;
+          border: 1px solid #4071cb;
+          cursor: pointer;
+          outline: none;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: $color2;
+            color: white;
+            box-shadow: 0px 7px 10px 0px #4071cb;
+          }
+        }
+      }
+    }
+  }
+  .section3 {
+    .container {
+      .lexus_info {
+        text-align: center;
+        h1 {
+          font-size: 27px;
+          font-family: sans-serif;
+        }
+      }
+      .lexus {
+        @include flex();
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 90px;
+        .lexus1 {
+          padding-top: 40px;
+          width: 250px;
+          height: 270px;
+          border: 1px solid #d9d9d9;
+          border-radius: 8px;
+          background-color: #f1f0eb;
+          cursor: pointer;
+          position: relative;
+          &:hover {
+            background-color: #ffffff;
+          }
+          &:hover .lexus_img {
+            transform: scale(1.2);
+          }
+          .lexus_img {
+            margin: 17px auto;
+            display: flex;
+            align-items: center;
+            width: 70%;
+            position: relative;
+            transition: all 0.3s ease;
+          }
+          .lexus_text {
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            top: 20%;
+            z-index: 99, 9;
+          }
+          .lexus_title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            h4 {
+              font-size: 15px;
+              font-weight: 400;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+          .lexus_aksiya {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            color: $color2;
+            font-size: 12px;
+            sup {
+              font-size: 30px;
+            }
+          }
+          .car_title {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding-top: 20px;
+            padding-left: 10px;
+
+            div {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+            }
+          }
+          .lexus_btn {
+            display: flex;
+            justify-content: center;
+            button {
+              display: flex;
+              justify-content: center;
+              padding: 10px 65px;
+              margin-top: 10px;
+              margin-bottom: 20px;
+              background-color: transparent;
+              font-size: 15px;
+              font-family: sans-serif;
+              font-weight: 300;
+              color: #000000;
+              border-radius: 6px;
+              border: none;
+              border: 1px solid #000000;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.3s ease;
+              &:hover {
+                background-color: $color2;
+                color: white;
+                border: none;
+              }
+            }
+          }
+        }
+        .pay_btn {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section4 {
+    .container {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .section_tesla {
+    display: none;
+  }
+
+  .section5 {
+    .container {
+      .dastavka {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 150px;
+        h1 {
+          font-size: 27px;
+          font-family: sans-serif;
+        }
+      }
+      .boxs {
+        @include flex();
+        padding-top: 50px;
+        padding-bottom: 90px;
+        flex-wrap: wrap;
+        .box {
+          border: 1px solid #4f4f4f;
+          border-radius: 10px;
+          cursor: pointer;
+          h1 {
+            padding-bottom: 50px;
+            padding-top: 15px;
+            padding-left: 20px;
+          }
+          h3 {
+            padding-bottom: 10px;
+            padding-left: 20px;
+          }
+          p {
+            padding-left: 20px;
+            font-size: 15px;
+            padding-bottom: 20px;
+          }
+        }
+        .box1 {
+          width: 300px;
+        }
+        .box2 {
+          width: 500px;
+          p {
+            width: 320px;
+          }
+        }
+        .box3 {
+          width: 350px;
+          height: 200px;
+        }
+        .box4 {
+          width: 480px;
+          margin-top: 20px;
+          padding-bottom: 30px;
+        }
+        .box5 {
+          margin-top: 20px;
+          width: 700px;
+          padding-bottom: 20px;
+        }
+        .box_btn {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          button {
+            display: flex;
+            justify-content: center;
+            padding: 8px 35px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: 300;
+            color: #000000;
+            border-radius: 6px;
+            margin-right: 40px;
+            border: none;
+            border: 1px solid #000000;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color: black;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section6 {
+    .container {
+      .audi_img {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        .audi {
+          width: 100%;
+        }
+        .audi2{
+          display: none;
+        }
+        &:hover .audi_cards {
+          bottom: 20px;
+        }
+      }
+      .audi_cards {
+        @include flex();
+        gap: 30px;
+        padding-top: 40px;
+        position: absolute;
+        bottom: -820px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 0.9s ease;
+        .audi_card {
+          width: 100%;
+          height: 290px;
+          border: 1px solid #4f4f4f;
+          border-radius: 10px;
+          background-color: #ffffff99;
+          h1 {
+            padding-bottom: 110px;
+            padding-top: 20px;
+            padding-left: 15px;
+            font-weight: 400;
+            font-size: 20px;
+          }
+          p {
+            font-size: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #f1f0eb;
+  .container {
+    padding-top: 90px;
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      border-top: 2px solid #989898;
+      border-bottom: 2px solid #989898;
+      .footer_left {
+        p {
+          font-size: 15px;
+          font-weight: 300;
+          color: #4f4f4f;
+        }
+        .footer_links {
+          display: flex;
+          gap: 20px;
+          padding-top: 30px;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+            font-family: sans-serif;
+            transition: all 0.2s ease;
+            &:hover {
+              color: $color2;
+              padding-bottom: 5px;
+              border-bottom: 2px solid #4071cb;
+            }
+          }
+        }
+        p {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+      .footer_right {
+        width: 480px;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        .call {
+          padding-top: 10px;
+          p {
+            font-size: 10px;
+            padding-bottom: 7px;
+          }
+        }
+        img {
+          width: 23px;
+          cursor: pointer;
+          padding-top: 25px;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(1.1) translateY(-5px);
+          }
+        }
+        button {
+          background-color: black;
+          color: white;
+          padding: 15px 35px;
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: $color2;
+            color: white;
+          }
+        }
+        .adress {
+          padding-top: 80px;
+          p {
+            font-size: 10px;
+          }
+          h6 {
+            font-size: 13px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .footer_bottom {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+    .payment {
+      display: flex;
+      gap: 10px;
+
+      .invoice {
+        width: 150px;
+        height: 80px;
+        border: 1px solid #989898;
+        border-radius: 8px;
+        &:hover {
+          background-color: #989898;
+        }
+        .invoice_img {
+          position: relative;
+          padding-left: 10px;
+          padding-top: 6px;
+          display: flex;
+          justify-content: space-between;
+          &:hover > .help_img {
+            display: block;
+            top: -10px;
+            cursor: pointer;
+          }
+          .help {
+            padding-right: 6px;
+            height: 15px;
+          }
+          .help_img {
+            width: 150px;
+            display: none;
+            padding-left: 18px;
+            padding-top: 10px;
+            height: 50px;
+            border: 1px solid #989898;
+            position: absolute;
+            font-size: 8px;
+            top: -60px;
+            right: -140px;
+            border-radius: 40px 0px 0px 40px;
+            background-color: black;
+            color: white;
+            z-index: 2;
+          }
+        }
+        h4 {
+          padding-top: 23px;
+          text-align: end;
+          padding-right: 6px;
+          font-size: 12px;
+        }
+        .usdt {
+          padding-top: 30px;
+          font-size: 12px;
+        }
+        .cash {
+          padding-top: 33px;
+          font-size: 12px;
+        }
+      }
+    }
+    .social {
+      display: flex;
+      padding-left: 60px;
+      gap: 15px;
+      .facebook,
+      .instagram {
+        width: 150px;
+        height: 80px;
+        border: 1px solid #989898;
+        border-radius: 8px;
+        &:hover {
+          background-color: #bcb7b7;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 13px;
+        }
+        .face {
+          padding-left: 10px;
+          padding-top: 6px;
+        }
+        .insta {
+          padding-left: 10px;
+          padding-top: 6px;
+        }
+        .facebook_info,
+        .instagram_info {
+          padding-top: 29px;
+          text-align: end;
+          padding-right: 6px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 447px) {
+  header {
+    .nav_top {
+      display: none;
+    }
+    .nav_bottom {
+      display: none;
+    }
+    .nav_phone {
+      @include flex();
+      border-bottom: 1px solid #989898;
+      .menu {
+        border-right: 1px solid #989898;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+        img {
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover{
+            transform: scale(1.1) translateY(-5px);
+          }
+        }
+      }
+
+      .tel {
+        border-left: 1px solid #989898;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+        img {
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover{
+            transform: scale(1.1) translateY(-5px);
+          }
+        }
+      }
+    }
+    .hero {
+      .hero_info {
+        width: 90%;
+        margin: 0 auto;
+        h1 {
+          padding-left: 10px;
+          font-size: 60px;
+        }
+        h2 {
+          padding-left: 10px;
+          padding-top: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  main {
+    .section1 {
+      .container {
+        .cards {
+          text-align: center;
+          .car1 {
+            img {
+              width: 90%;
+            }
+          }
+          .car2 {
+            img {
+              width: 90%;
+              height: 300px;
+            }
+          }
+        }
+      }
+    }
+    .section2 {
+      .container {
+        .cars_btns {
+          width: 90%;
+          margin: 0 auto;
+          button {
+            padding: 10px 0px;
+            font-size: 13px;
+          }
+        }
+        .cars {
+          width: 90%;
+          margin: 0 auto;
+          padding-top: 10px;
+          .avto {
+            width: 25%;
+            a {
+              h4 {
+                font-size: 12px;
+              }
+            }
+            img {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+    .section3 {
+      .container {
+        .lexus {
+          flex-wrap: wrap;
+          justify-content: center;
+          .lexus1 {
+            width: 80%;
+            height: 290px;
+            .lexus_btn {
+              text-align: center;
+              margin: 0 auto;
+              width: 100%;
+              button {
+                padding: 10px 85px;
+                font-size: 15px;
+              }
+            }
+          }
+          .pay_btn {
+            width: 90%;
+            margin-top: 10px;
+            text-align: center;
+            display: block;
+            button {
+              width: 90%;
+              padding: 10px 0px;
+              border: none;
+              border: 1px solid $color2;
+              border-radius: 10px;
+              color: $color2;
+              cursor: pointer;
+              &:hover {
+                background-color: $color2;
+                color: white;
+                box-shadow: 0px 2px 10px 2px $color2;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section4 {
+      display: none;
+    }
+    .section_tesla {
+      display: block;
+      text-align: center;
+      padding-bottom: 90px;
+    }
+    .section5 {
+      .container {
+        .dastavka {
+          width: 90%;
+          padding-top: 10px;
+        }
+        .boxs {
+          width: 90%;
+          margin: 0 auto;
+          gap: 10px;
+          .box {
+            width: 100%;
+          }
+          .box5 {
+            .box_btn {
+              display: block;
+              button {
+                width: 90%;
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section6 {
+      .container {
+        .audi_img {
+          display: flex;
+          justify-content: center;
+          .audi{
+            display: none;
+          }
+          .audi2 {
+            width: 90%;
+            height: 700px;
+          }
+          .audi_cards {
+            display: block;
+            .audi_card {
+              width: 90%;
+              height: 130px;
+              margin: 0 auto;
+              border: none;
+              margin-bottom: 10px;
+              h1 {
+                padding-bottom: 10px;
+              }
+              p {
+                padding-bottom: 5px;
+              }
+            }
+            .audi_card1 {
+              height: 180px;
+            }
+            .audi_card2 {
+              height: 170px;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .container {
+      .footer {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .footer_left {
+          width: 100%;
+        }
+        .footer_left{
+          .footer_links {
+            display: none;
+          }
+
+        }
+        .footer_right {
+          .call{
+            padding-right: 40px;
+          }
+          button{
+            width: 100%;
+          }
+          .adress{
+            padding-top: 10px;
+          }
+        }
+      }
+      .footer_bottom{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 30px;
+        margin-bottom: 90px;
+        padding-bottom: 70px;
+        .payment{
+          width: 100%;
+          padding-bottom: 20px;
+        }
+        .social{
+          width: 100%;
+          margin: 0 auto;
+          position: relative;
+          margin-bottom: 50px;
+          .facebook{
+            position: absolute;
+            left: 0;
+            width: 48%;
+          }
+          .instagram{
+            position: absolute;
+            right: 0;
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
+}

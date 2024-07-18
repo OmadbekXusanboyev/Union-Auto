@@ -1,0 +1,1039 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .nav_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+header .nav_top .select {
+  display: flex;
+  gap: 30px;
+}
+header .nav_top .select select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+header .nav_top .select select option {
+  color: white;
+  background-color: black;
+}
+header .nav_top .phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+header .nav_top .phone img {
+  transition: all 0.3s ease;
+}
+header .nav_top .phone img:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+header .nav_top .phone button {
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .nav_top .phone button:hover {
+  background-color: white;
+  color: black;
+}
+header .nav_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  border-top: 2px solid rgba(255, 255, 255, 0.4745098039);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4745098039);
+}
+header .nav_bottom .logo img {
+  width: 100%;
+}
+header .nav_bottom .links {
+  display: flex;
+  gap: 30px;
+  padding-right: 200px;
+  letter-spacing: 1px;
+}
+header .nav_bottom .links li {
+  list-style: none;
+  transition: all 0.3s ease;
+}
+header .nav_bottom .links li:hover {
+  transform: translateY(-5px);
+}
+header .nav_bottom .links li a {
+  text-decoration: none;
+  color: white;
+}
+header .hero {
+  overflow: hidden;
+  position: relative;
+}
+header .hero .hero_info {
+  width: 500px;
+  color: #ffffff;
+  font-family: sans-serif;
+  padding-top: 200px;
+  padding-bottom: 290px;
+}
+header .hero .hero_info h1 {
+  padding-left: 50px;
+  font-size: 40px;
+}
+header .hero .hero_info h2 {
+  padding-left: 50px;
+  font-size: 30px;
+}
+header .hero .hero_btn {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+header .nav_phone {
+  display: none;
+}
+
+main {
+  background-color: #f1f0eb;
+}
+main .section1 .container .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+main .section1 .container .cards .car1 {
+  position: relative;
+  overflow: hidden;
+}
+main .section1 .container .cards .car1 img {
+  width: 590px;
+}
+main .section1 .container .cards .car1 .car_info {
+  position: absolute;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: sans-serif;
+  top: 0px;
+  left: -230px;
+  transition: all 0.6s ease-out;
+}
+main .section1 .container .cards .car1:hover .car_info {
+  transform: translateY(30px) rotate(360deg);
+  left: 30px;
+}
+main .section1 .container .cards .car1 .car_btn {
+  position: absolute;
+  bottom: -70px;
+  right: 30px;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.0117647059);
+  color: white;
+  font-size: 12px;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid #4f4f4f;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease;
+}
+main .section1 .container .cards .car1 .car_btn:active {
+  background-color: black;
+  transform: scale(0.9);
+}
+main .section1 .container .cards .car1:hover .car_btn {
+  bottom: 30px;
+}
+main .section1 .container .cards .car2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+main .section1 .container .cards .car2 img {
+  width: 590px;
+}
+main .section1 .container .cards .car2 .car3 {
+  position: relative;
+  overflow: hidden;
+}
+main .section1 .container .cards .car2 .car3 .car_info {
+  position: absolute;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: sans-serif;
+  top: 0px;
+  left: -230px;
+  transition: all 0.4s ease-out;
+}
+main .section1 .container .cards .car2 .car3:hover .car_info {
+  transform: translateY(30px) rotate(360deg);
+  left: 30px;
+}
+main .section1 .container .cards .car2 .car3 .car_btn {
+  position: absolute;
+  bottom: -70px;
+  right: 30px;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.0117647059);
+  color: white;
+  font-size: 12px;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid #4f4f4f;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+main .section1 .container .cards .car2 .car3 .car_btn:active {
+  background-color: black;
+  transform: scale(0.9);
+}
+main .section1 .container .cards .car2 .car3:hover .car_btn {
+  bottom: 30px;
+}
+main .section1 .container .cards .car2 .car4 {
+  position: relative;
+  overflow: hidden;
+}
+main .section1 .container .cards .car2 .car4 .car_info {
+  position: absolute;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: sans-serif;
+  top: 0px;
+  left: -230px;
+  transition: all 0.4s ease-out;
+}
+main .section1 .container .cards .car2 .car4:hover .car_info {
+  transform: translateY(30px) rotate(360deg);
+  left: 30px;
+}
+main .section1 .container .cards .car2 .car4 .car_btn {
+  position: absolute;
+  bottom: -70px;
+  right: 30px;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.0117647059);
+  color: white;
+  font-size: 12px;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid #4f4f4f;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+main .section1 .container .cards .car2 .car4 .car_btn:active {
+  background-color: black;
+  transform: scale(0.9);
+}
+main .section1 .container .cards .car2 .car4:hover .car_btn {
+  bottom: 30px;
+}
+main .section2 .container .cars_info {
+  text-align: center;
+}
+main .section2 .container .cars_info h1 {
+  font-size: 27px;
+  font-family: sans-serif;
+}
+main .section2 .container .cars_btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+main .section2 .container .cars_btns button {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: transparent;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 400;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid rgba(162, 161, 161, 0.4784313725);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+main .section2 .container .cars_btns button:hover {
+  background-color: #4071cb;
+  color: white;
+}
+main .section2 .container .cars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 50px 0px;
+  flex-wrap: wrap;
+}
+main .section2 .container .cars img {
+  transition: all 0.4s ease;
+}
+main .section2 .container .cars img:hover {
+  transform: translateY(-10px) scale(1.4);
+}
+main .section2 .container .cars .avto {
+  text-align: center;
+}
+main .section2 .container .cars .avto a {
+  text-decoration: none;
+}
+main .section2 .container .cars .avto a h4 {
+  color: #4071cb;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 7px;
+  cursor: pointer;
+}
+main .section2 .container .cars .avto img {
+  width: 150px;
+  cursor: pointer;
+}
+main .section2 .container .avto_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+main .section2 .container .avto_btn button {
+  padding: 10px 70px;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #4071cb;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid #4071cb;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+main .section2 .container .avto_btn button:hover {
+  background-color: #4071cb;
+  color: white;
+  box-shadow: 0px 7px 10px 0px #4071cb;
+}
+main .section3 .container .lexus_info {
+  text-align: center;
+}
+main .section3 .container .lexus_info h1 {
+  font-size: 27px;
+  font-family: sans-serif;
+}
+main .section3 .container .lexus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+main .section3 .container .lexus .lexus1 {
+  padding-top: 40px;
+  width: 250px;
+  height: 270px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background-color: #f1f0eb;
+  cursor: pointer;
+  position: relative;
+}
+main .section3 .container .lexus .lexus1:hover {
+  background-color: #ffffff;
+}
+main .section3 .container .lexus .lexus1:hover .lexus_img {
+  transform: scale(1.2);
+}
+main .section3 .container .lexus .lexus1 .lexus_img {
+  margin: 17px auto;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+main .section3 .container .lexus .lexus1 .lexus_text {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 20%;
+  z-index: 99, 9;
+}
+main .section3 .container .lexus .lexus1 .lexus_title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+main .section3 .container .lexus .lexus1 .lexus_title h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+main .section3 .container .lexus .lexus1 .lexus_title p {
+  font-size: 12px;
+}
+main .section3 .container .lexus .lexus1 .lexus_aksiya {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  color: #4071cb;
+  font-size: 12px;
+}
+main .section3 .container .lexus .lexus1 .lexus_aksiya sup {
+  font-size: 30px;
+}
+main .section3 .container .lexus .lexus1 .car_title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+main .section3 .container .lexus .lexus1 .car_title div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main .section3 .container .lexus .lexus1 .lexus_btn {
+  display: flex;
+  justify-content: center;
+}
+main .section3 .container .lexus .lexus1 .lexus_btn button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 65px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #000000;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid #000000;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+main .section3 .container .lexus .lexus1 .lexus_btn button:hover {
+  background-color: #4071cb;
+  color: white;
+  border: none;
+}
+main .section3 .container .lexus .pay_btn {
+  display: none;
+}
+main .section4 .container img {
+  width: 100%;
+}
+main .section_tesla {
+  display: none;
+}
+main .section5 .container .dastavka {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
+}
+main .section5 .container .dastavka h1 {
+  font-size: 27px;
+  font-family: sans-serif;
+}
+main .section5 .container .boxs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  flex-wrap: wrap;
+}
+main .section5 .container .boxs .box {
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main .section5 .container .boxs .box h1 {
+  padding-bottom: 50px;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+main .section5 .container .boxs .box h3 {
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+main .section5 .container .boxs .box p {
+  padding-left: 20px;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+main .section5 .container .boxs .box1 {
+  width: 300px;
+}
+main .section5 .container .boxs .box2 {
+  width: 500px;
+}
+main .section5 .container .boxs .box2 p {
+  width: 320px;
+}
+main .section5 .container .boxs .box3 {
+  width: 350px;
+  height: 200px;
+}
+main .section5 .container .boxs .box4 {
+  width: 480px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+main .section5 .container .boxs .box5 {
+  margin-top: 20px;
+  width: 700px;
+  padding-bottom: 20px;
+}
+main .section5 .container .boxs .box_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section5 .container .boxs .box_btn button {
+  display: flex;
+  justify-content: center;
+  padding: 8px 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #000000;
+  border-radius: 6px;
+  margin-right: 40px;
+  border: none;
+  border: 1px solid #000000;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+main .section5 .container .boxs .box_btn button:hover {
+  background-color: black;
+  color: white;
+}
+main .section6 .container .audi_img {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+main .section6 .container .audi_img .audi {
+  width: 100%;
+}
+main .section6 .container .audi_img .audi2 {
+  display: none;
+}
+main .section6 .container .audi_img:hover .audi_cards {
+  bottom: 20px;
+}
+main .section6 .container .audi_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+  position: absolute;
+  bottom: -820px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.9s ease;
+}
+main .section6 .container .audi_cards .audi_card {
+  width: 100%;
+  height: 290px;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+main .section6 .container .audi_cards .audi_card h1 {
+  padding-bottom: 110px;
+  padding-top: 20px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 20px;
+}
+main .section6 .container .audi_cards .audi_card p {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer {
+  background-color: #f1f0eb;
+}
+footer .container {
+  padding-top: 90px;
+}
+footer .container .footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  border-top: 2px solid #989898;
+  border-bottom: 2px solid #989898;
+}
+footer .container .footer .footer_left p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #4f4f4f;
+}
+footer .container .footer .footer_left .footer_links {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+footer .container .footer .footer_left .footer_links a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-family: sans-serif;
+  transition: all 0.2s ease;
+}
+footer .container .footer .footer_left .footer_links a:hover {
+  color: #4071cb;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #4071cb;
+}
+footer .container .footer .footer_left p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer .container .footer .footer_right {
+  width: 480px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+footer .container .footer .footer_right .call {
+  padding-top: 10px;
+}
+footer .container .footer .footer_right .call p {
+  font-size: 10px;
+  padding-bottom: 7px;
+}
+footer .container .footer .footer_right img {
+  width: 23px;
+  cursor: pointer;
+  padding-top: 25px;
+  transition: all 0.3s ease;
+}
+footer .container .footer .footer_right img:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+footer .container .footer .footer_right button {
+  background-color: black;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+footer .container .footer .footer_right button:hover {
+  background-color: #4071cb;
+  color: white;
+}
+footer .container .footer .footer_right .adress {
+  padding-top: 80px;
+}
+footer .container .footer .footer_right .adress p {
+  font-size: 10px;
+}
+footer .container .footer .footer_right .adress h6 {
+  font-size: 13px;
+  font-weight: 400;
+}
+footer .footer_bottom {
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+}
+footer .footer_bottom .payment {
+  display: flex;
+  gap: 10px;
+}
+footer .footer_bottom .payment .invoice {
+  width: 150px;
+  height: 80px;
+  border: 1px solid #989898;
+  border-radius: 8px;
+}
+footer .footer_bottom .payment .invoice:hover {
+  background-color: #989898;
+}
+footer .footer_bottom .payment .invoice .invoice_img {
+  position: relative;
+  padding-left: 10px;
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_bottom .payment .invoice .invoice_img:hover > .help_img {
+  display: block;
+  top: -10px;
+  cursor: pointer;
+}
+footer .footer_bottom .payment .invoice .invoice_img .help {
+  padding-right: 6px;
+  height: 15px;
+}
+footer .footer_bottom .payment .invoice .invoice_img .help_img {
+  width: 150px;
+  display: none;
+  padding-left: 18px;
+  padding-top: 10px;
+  height: 50px;
+  border: 1px solid #989898;
+  position: absolute;
+  font-size: 8px;
+  top: -60px;
+  right: -140px;
+  border-radius: 40px 0px 0px 40px;
+  background-color: black;
+  color: white;
+  z-index: 2;
+}
+footer .footer_bottom .payment .invoice h4 {
+  padding-top: 23px;
+  text-align: end;
+  padding-right: 6px;
+  font-size: 12px;
+}
+footer .footer_bottom .payment .invoice .usdt {
+  padding-top: 30px;
+  font-size: 12px;
+}
+footer .footer_bottom .payment .invoice .cash {
+  padding-top: 33px;
+  font-size: 12px;
+}
+footer .footer_bottom .social {
+  display: flex;
+  padding-left: 60px;
+  gap: 15px;
+}
+footer .footer_bottom .social .facebook,
+footer .footer_bottom .social .instagram {
+  width: 150px;
+  height: 80px;
+  border: 1px solid #989898;
+  border-radius: 8px;
+}
+footer .footer_bottom .social .facebook:hover,
+footer .footer_bottom .social .instagram:hover {
+  background-color: #bcb7b7;
+}
+footer .footer_bottom .social .facebook a,
+footer .footer_bottom .social .instagram a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+footer .footer_bottom .social .facebook .face,
+footer .footer_bottom .social .instagram .face {
+  padding-left: 10px;
+  padding-top: 6px;
+}
+footer .footer_bottom .social .facebook .insta,
+footer .footer_bottom .social .instagram .insta {
+  padding-left: 10px;
+  padding-top: 6px;
+}
+footer .footer_bottom .social .facebook .facebook_info,
+footer .footer_bottom .social .facebook .instagram_info,
+footer .footer_bottom .social .instagram .facebook_info,
+footer .footer_bottom .social .instagram .instagram_info {
+  padding-top: 29px;
+  text-align: end;
+  padding-right: 6px;
+  font-size: 12px;
+}
+
+@media (max-width: 447px) {
+  header .nav_top {
+    display: none;
+  }
+  header .nav_bottom {
+    display: none;
+  }
+  header .nav_phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #989898;
+  }
+  header .nav_phone .menu {
+    border-right: 1px solid #989898;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  header .nav_phone .menu img {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  header .nav_phone .menu img:hover {
+    transform: scale(1.1) translateY(-5px);
+  }
+  header .nav_phone .tel {
+    border-left: 1px solid #989898;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  header .nav_phone .tel img {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  header .nav_phone .tel img:hover {
+    transform: scale(1.1) translateY(-5px);
+  }
+  header .hero .hero_info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .hero .hero_info h1 {
+    padding-left: 10px;
+    font-size: 60px;
+  }
+  header .hero .hero_info h2 {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  main .section1 .container .cards {
+    text-align: center;
+  }
+  main .section1 .container .cards .car1 img {
+    width: 90%;
+  }
+  main .section1 .container .cards .car2 img {
+    width: 90%;
+    height: 300px;
+  }
+  main .section2 .container .cars_btns {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .section2 .container .cars_btns button {
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+  main .section2 .container .cars {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  main .section2 .container .cars .avto {
+    width: 25%;
+  }
+  main .section2 .container .cars .avto a h4 {
+    font-size: 12px;
+  }
+  main .section2 .container .cars .avto img {
+    width: 90%;
+  }
+  main .section3 .container .lexus {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .section3 .container .lexus .lexus1 {
+    width: 80%;
+    height: 290px;
+  }
+  main .section3 .container .lexus .lexus1 .lexus_btn {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  main .section3 .container .lexus .lexus1 .lexus_btn button {
+    padding: 10px 85px;
+    font-size: 15px;
+  }
+  main .section3 .container .lexus .pay_btn {
+    width: 90%;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+  }
+  main .section3 .container .lexus .pay_btn button {
+    width: 90%;
+    padding: 10px 0px;
+    border: none;
+    border: 1px solid #4071cb;
+    border-radius: 10px;
+    color: #4071cb;
+    cursor: pointer;
+  }
+  main .section3 .container .lexus .pay_btn button:hover {
+    background-color: #4071cb;
+    color: white;
+    box-shadow: 0px 2px 10px 2px #4071cb;
+  }
+  main .section4 {
+    display: none;
+  }
+  main .section_tesla {
+    display: block;
+    text-align: center;
+    padding-bottom: 90px;
+  }
+  main .section5 .container .dastavka {
+    width: 90%;
+    padding-top: 10px;
+  }
+  main .section5 .container .boxs {
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  main .section5 .container .boxs .box {
+    width: 100%;
+  }
+  main .section5 .container .boxs .box5 .box_btn {
+    display: block;
+  }
+  main .section5 .container .boxs .box5 .box_btn button {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .section6 .container .audi_img {
+    display: flex;
+    justify-content: center;
+  }
+  main .section6 .container .audi_img .audi {
+    display: none;
+  }
+  main .section6 .container .audi_img .audi2 {
+    width: 90%;
+    height: 700px;
+  }
+  main .section6 .container .audi_img .audi_cards {
+    display: block;
+  }
+  main .section6 .container .audi_img .audi_cards .audi_card {
+    width: 90%;
+    height: 130px;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 10px;
+  }
+  main .section6 .container .audi_img .audi_cards .audi_card h1 {
+    padding-bottom: 10px;
+  }
+  main .section6 .container .audi_img .audi_cards .audi_card p {
+    padding-bottom: 5px;
+  }
+  main .section6 .container .audi_img .audi_cards .audi_card1 {
+    height: 180px;
+  }
+  main .section6 .container .audi_img .audi_cards .audi_card2 {
+    height: 170px;
+  }
+  footer .container .footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .container .footer .footer_left {
+    width: 100%;
+  }
+  footer .container .footer .footer_left .footer_links {
+    display: none;
+  }
+  footer .container .footer .footer_right .call {
+    padding-right: 40px;
+  }
+  footer .container .footer .footer_right button {
+    width: 100%;
+  }
+  footer .container .footer .footer_right .adress {
+    padding-top: 10px;
+  }
+  footer .container .footer_bottom {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 90px;
+    padding-bottom: 70px;
+  }
+  footer .container .footer_bottom .payment {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  footer .container .footer_bottom .social {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  footer .container .footer_bottom .social .facebook {
+    position: absolute;
+    left: 0;
+    width: 48%;
+  }
+  footer .container .footer_bottom .social .instagram {
+    position: absolute;
+    right: 0;
+    width: 48%;
+  }
+}/*# sourceMappingURL=sass.main.css.map */
